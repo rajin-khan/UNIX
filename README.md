@@ -121,7 +121,7 @@ gcc projnewupdated.c -o grocery_management
 
 ### **📌 Sample Run**
 
-![Full Run Demo](./fullrun.mp4)
+https://github.com/user-attachments/assets/b2d97aa6-973a-4022-b283-44c3e3ff3ee3
 
 ---
 
