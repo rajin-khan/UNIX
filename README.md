@@ -130,8 +130,8 @@ strcpy(inventory[i].prod_name, up_name);
 </div>
 
 ```bash
-gcc projnewupdated.c -o grocery_management
-./grocery_management
+gcc main.c -o main
+./main
 ```
 
 <div align="center">
