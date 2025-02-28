@@ -37,6 +37,7 @@ The program is designed to be lightweight and efficient by:
 
 ### **📌 Main Functionality**
 The main menu provides a simple interface for users to choose actions, with the ability to return to the menu or exit after completing a task.
+</div>
 
 ```c
 printf("1. Add Products\n");
@@ -47,6 +48,7 @@ printf("5. Update Products\n");
 ```
 
 ---
+<div align="center">
 
 ## **🔍 Core Functionalities**
 
@@ -54,6 +56,7 @@ printf("5. Update Products\n");
 - Reads user input and appends items to `INVENTORY.txt`.
 - Ensures valid price input by verifying numeric characters.
 - Prevents inventory overflow beyond 100 items.
+</div>
 
 ```c
 if (counter == 100) {
@@ -62,10 +65,12 @@ if (counter == 100) {
 ```
 
 ---
+<div align="center">
 
 ### **📋 View Products**
 - Loads inventory from file and displays product details in a structured format.
 - Uses a secondary array to prevent memory corruption issues.
+</div>
 
 ```c
 printf("\n%s\n%s\n%s\n", inventory[i].prod_name, inventory[i].type, inventory[i].price);
@@ -73,9 +78,12 @@ printf("\n%s\n%s\n%s\n", inventory[i].prod_name, inventory[i].type, inventory[i]
 
 ---
 
+<div align="center">
+
 ### **🔍 Search Products**
 - Uses a loop and `strcmp()` to match user queries with stored product names.
 - Displays product details upon a successful match.
+</div>
 
 ```c
 if (strcmp(search_key, inventory[count].prod_name) == 0) {
@@ -84,11 +92,13 @@ if (strcmp(search_key, inventory[count].prod_name) == 0) {
 ```
 
 ---
+<div align="center">
 
 ### **🗑️ Delete Products**
 - Finds a product based on name input and removes it.
 - Shifts remaining items in the inventory array to fill the gap.
 - Writes updated inventory back to file.
+</div>
 
 ```c
 for (int i = sk_idx; i < count - 1; i++) {
@@ -98,10 +108,13 @@ for (int i = sk_idx; i < count - 1; i++) {
 
 ---
 
+<div align="center">
+
 ### **✏️ Update Products**
 - Locates the product by name.
 - Takes updated information and overwrites the existing entry.
 - Ensures all fields are properly formatted.
+</div>
 
 ```c
 scanf(" %[^"]", up_name);
@@ -109,15 +122,19 @@ strcpy(inventory[i].prod_name, up_name);
 ```
 
 ---
+<div align="center">
 
 ## **📌 How to Run the Program**
 
 ### **💻 Compilation & Execution**
+</div>
 
 ```bash
 gcc projnewupdated.c -o grocery_management
 ./grocery_management
 ```
+
+<div align="center">
 
 ### **📌 Sample Run**
 
